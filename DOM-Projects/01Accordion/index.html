@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="accordian_body">
+      <h1>Ineuron FAQ's</h1>
+    </div>
+    <script id="faq-js" src="faq.js">
+
+      function camelCase(input){
+        const arr = input.split(" ");
+        let str;
+        arr.forEach(element => {
+          str= str+element.toUpperCase();
+        });
+        return str;
+      }
+      console.log(camelCase("hi me"));
+
+    </script>
+  </body>
+</html>
